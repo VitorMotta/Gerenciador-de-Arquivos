@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Gerenciador de Arquivos: Referência do Arquivo src/main.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Gerenciador de Arquivos<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhum resultado encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência do Arquivo main.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="func_8h_source.html">func.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Funções</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">    7</span>           {</div>
+<div class="line"><span class="lineno">    8</span>  <span class="comment">// inicializa a memória</span></div>
+<div class="line"><span class="lineno">    9</span>  <a class="code hl_struct" href="struct_memory.html">Memory</a>* mem = <a class="code hl_function" href="func_8c.html#a312132702b2bd4886e6838e4f593f684">init_memory</a>(<a class="code hl_define" href="func_8h.html#ad51ded0bbd705f02f73fc60c0b721ced">BLOCK_SIZE</a>);</div>
+<div class="line"><span class="lineno">   10</span>  </div>
+<div class="line"><span class="lineno">   11</span>  <span class="keywordtype">int</span> leave = 0;</div>
+<div class="line"><span class="lineno">   12</span>  <span class="keywordtype">char</span> filename[256];</div>
+<div class="line"><span class="lineno">   13</span>  <span class="keywordtype">char</span> term[256];</div>
+<div class="line"><span class="lineno">   14</span> </div>
+<div class="line"><span class="lineno">   15</span>  printf(<span class="stringliteral">&quot;---------------------------------------------\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   16</span>  printf(<span class="stringliteral">&quot;|               BEM VINDO                   |\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   17</span>  printf(<span class="stringliteral">&quot;---------------------------------------------\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   18</span> </div>
+<div class="line"><span class="lineno">   19</span>  <span class="comment">// cria um loop para exibir o menu de opções e ler as entradas do usuário</span></div>
+<div class="line"><span class="lineno">   20</span>  <span class="keywordflow">while</span> (1) {</div>
+<div class="line"><span class="lineno">   21</span>    printf(<span class="stringliteral">&quot;\t\nMenu:\n\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   22</span>    printf(<span class="stringliteral">&quot;1 - Inserir arquivo\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   23</span>    printf(<span class="stringliteral">&quot;2 - Remover arquivo\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   24</span>    printf(<span class="stringliteral">&quot;3 - Procurar arquivo\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   25</span>    printf(<span class="stringliteral">&quot;4 - Exibir arquivo\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   26</span>    printf(<span class="stringliteral">&quot;5 - Exibir informações do arquivo\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   27</span>    printf(<span class="stringliteral">&quot;6 - Procurar termo\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   28</span>    printf(<span class="stringliteral">&quot;7 - Status da memória\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   29</span>    printf(<span class="stringliteral">&quot;8 - Status gráfico da memória\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   30</span>    printf(<span class="stringliteral">&quot;9 - Sair\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   31</span>    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    printf(<span class="stringliteral">&quot;Entre com sua opção: &quot;</span>);</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordtype">int</span> choice;</div>
+<div class="line"><span class="lineno">   35</span>    scanf(<span class="stringliteral">&quot;%d&quot;</span>, &amp;choice);</div>
+<div class="line"><span class="lineno">   36</span>    </div>
+<div class="line"><span class="lineno">   37</span>    <span class="comment">//cria uma ação para receber os comandos do usuário e entrar na opção desejada</span></div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">switch</span> (choice){</div>
+<div class="line"><span class="lineno">   39</span>        <span class="keywordflow">case</span> 1:</div>
+<div class="line"><span class="lineno">   40</span>            <span class="comment">// insere um arquivo</span></div>
+<div class="line"><span class="lineno">   41</span>            printf(<span class="stringliteral">&quot;Nome do arquivo: &quot;</span>);</div>
+<div class="line"><span class="lineno">   42</span>            scanf(<span class="stringliteral">&quot;%s&quot;</span>, filename);</div>
+<div class="line"><span class="lineno">   43</span>            <a class="code hl_struct" href="struct_file.html">File</a>* file = <a class="code hl_function" href="func_8c.html#a579aada0b10dd472b5b495c132451dc5">read_file</a>(filename);</div>
+<div class="line"><span class="lineno">   44</span>            <span class="keywordflow">if</span> (file != NULL) {</div>
+<div class="line"><span class="lineno">   45</span>              <a class="code hl_function" href="func_8c.html#a0de998e3a37b57cc9dff9cc5a8aef7a5">insert_file</a>(mem, file);</div>
+<div class="line"><span class="lineno">   46</span>            }</div>
+<div class="line"><span class="lineno">   47</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>        <span class="keywordflow">case</span> 2:</div>
+<div class="line"><span class="lineno">   50</span>            <span class="comment">// remove um arquivo</span></div>
+<div class="line"><span class="lineno">   51</span>            printf(<span class="stringliteral">&quot;Nome do arquivo: &quot;</span>);</div>
+<div class="line"><span class="lineno">   52</span>            scanf(<span class="stringliteral">&quot;%s&quot;</span>, filename);</div>
+<div class="line"><span class="lineno">   53</span>            <a class="code hl_struct" href="struct_file.html">File</a>* file2 = <a class="code hl_function" href="func_8c.html#a2af195047ddf73839820cbf0c96a613b">search_file</a>(mem, filename);</div>
+<div class="line"><span class="lineno">   54</span>            <span class="keywordflow">if</span> (file2 != NULL) {</div>
+<div class="line"><span class="lineno">   55</span>              <a class="code hl_function" href="func_8c.html#a298b4947e74d6b73d92c670b3e19106c">remove_file</a>(mem, file2);</div>
+<div class="line"><span class="lineno">   56</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   57</span>              printf(<span class="stringliteral">&quot;Erro: Arquivo não encontrado na memória.\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   58</span>            }</div>
+<div class="line"><span class="lineno">   59</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">case</span> 3:</div>
+<div class="line"><span class="lineno">   62</span>            <span class="comment">// pesquisa um arquivo</span></div>
+<div class="line"><span class="lineno">   63</span>            printf(<span class="stringliteral">&quot;Nome do arquivo: &quot;</span>);</div>
+<div class="line"><span class="lineno">   64</span>            scanf(<span class="stringliteral">&quot;%s&quot;</span>, filename);</div>
+<div class="line"><span class="lineno">   65</span>            <a class="code hl_struct" href="struct_file.html">File</a>* file5 = <a class="code hl_function" href="func_8c.html#a2af195047ddf73839820cbf0c96a613b">search_file</a>(mem, filename);</div>
+<div class="line"><span class="lineno">   66</span>            <span class="keywordflow">if</span> (file5 != NULL) {</div>
+<div class="line"><span class="lineno">   67</span>              printf(<span class="stringliteral">&quot;Sucesso: Arquivo encontrado na memória.\n\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   68</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   69</span>              printf(<span class="stringliteral">&quot;Erro: Arquivo não encontrado na memória.\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   70</span>            }</div>
+<div class="line"><span class="lineno">   71</span>            <span class="keywordflow">break</span>;    </div>
+<div class="line"><span class="lineno">   72</span>        </div>
+<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">case</span> 4:</div>
+<div class="line"><span class="lineno">   74</span>            <span class="comment">// exibe um arquivo</span></div>
+<div class="line"><span class="lineno">   75</span>            printf(<span class="stringliteral">&quot;Nome do arquivo: &quot;</span>);</div>
+<div class="line"><span class="lineno">   76</span>            scanf(<span class="stringliteral">&quot;%s&quot;</span>, filename);</div>
+<div class="line"><span class="lineno">   77</span>            <a class="code hl_struct" href="struct_file.html">File</a>* file3 = <a class="code hl_function" href="func_8c.html#a2af195047ddf73839820cbf0c96a613b">search_file</a>(mem, filename);</div>
+<div class="line"><span class="lineno">   78</span>            <span class="keywordflow">if</span> (file3 != NULL) {</div>
+<div class="line"><span class="lineno">   79</span>              <a class="code hl_function" href="func_8c.html#aad9d6fdc97d2801a1e521c32f89bc1f8">show_file</a>(file3);</div>
+<div class="line"><span class="lineno">   80</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   81</span>              printf(<span class="stringliteral">&quot;Erro: Arquivo não encontrado na memória.\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   82</span>            }</div>
+<div class="line"><span class="lineno">   83</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>        <span class="keywordflow">case</span> 5:</div>
+<div class="line"><span class="lineno">   86</span>            <span class="comment">// exibe informações sobre um arquivo</span></div>
+<div class="line"><span class="lineno">   87</span>            printf(<span class="stringliteral">&quot;Nome do arquivo: &quot;</span>);</div>
+<div class="line"><span class="lineno">   88</span>            scanf(<span class="stringliteral">&quot;%s&quot;</span>, filename);</div>
+<div class="line"><span class="lineno">   89</span>            <a class="code hl_struct" href="struct_file.html">File</a>* file4 = <a class="code hl_function" href="func_8c.html#a2af195047ddf73839820cbf0c96a613b">search_file</a>(mem, filename);</div>
+<div class="line"><span class="lineno">   90</span>            <span class="keywordflow">if</span> (file4 != NULL) {</div>
+<div class="line"><span class="lineno">   91</span>              <a class="code hl_function" href="func_8c.html#aeaea99954a75823f788473dd6194c59d">show_file_info</a>(file4);</div>
+<div class="line"><span class="lineno">   92</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   93</span>              printf(<span class="stringliteral">&quot;Erro: Arquivo não encontrado na memória.\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   94</span>            }</div>
+<div class="line"><span class="lineno">   95</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">case</span> 6:</div>
+<div class="line"><span class="lineno">   98</span>        <span class="comment">// pesquisa um termo em todos os arquivos</span></div>
+<div class="line"><span class="lineno">   99</span>            printf(<span class="stringliteral">&quot;Digite o termo: &quot;</span>);</div>
+<div class="line"><span class="lineno">  100</span>            scanf(<span class="stringliteral">&quot;%s&quot;</span>, term);</div>
+<div class="line"><span class="lineno">  101</span>            <a class="code hl_function" href="func_8c.html#a8d18d0530cc848c5efd622a2d3db3950">show_results_table</a>(mem, term);</div>
+<div class="line"><span class="lineno">  102</span>            <span class="keywordflow">break</span>;            </div>
+<div class="line"><span class="lineno">  103</span> </div>
+<div class="line"><span class="lineno">  104</span>        <span class="keywordflow">case</span> 7:</div>
+<div class="line"><span class="lineno">  105</span>            <span class="comment">// exibe o status da memória</span></div>
+<div class="line"><span class="lineno">  106</span>            printf(<span class="stringliteral">&quot;Tamanho total da memória: %zu bytes\n&quot;</span>, mem-&gt;<a class="code hl_variable" href="struct_memory.html#a9ab5cd8a4925510d332bdb78ac7e7628">total_size</a>);</div>
+<div class="line"><span class="lineno">  107</span>            printf(<span class="stringliteral">&quot;Tamanho usado da memória: %zu bytes\n&quot;</span>, mem-&gt;<a class="code hl_variable" href="struct_memory.html#aa5438b1f8825f89d25c5db97fb7b934a">used_size</a>);</div>
+<div class="line"><span class="lineno">  108</span>            printf(<span class="stringliteral">&quot;Tamanho livre da memória: %zu bytes\n&quot;</span>, mem-&gt;<a class="code hl_variable" href="struct_memory.html#a9ab5cd8a4925510d332bdb78ac7e7628">total_size</a> - mem-&gt;<a class="code hl_variable" href="struct_memory.html#aa5438b1f8825f89d25c5db97fb7b934a">used_size</a>);</div>
+<div class="line"><span class="lineno">  109</span>            <span class="keywordflow">break</span>;                  </div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span> </div>
+<div class="line"><span class="lineno">  112</span>        <span class="keywordflow">case</span> 8:</div>
+<div class="line"><span class="lineno">  113</span>            <span class="comment">// exibe os elementos graficamente  </span></div>
+<div class="line"><span class="lineno">  114</span>            printf(<span class="stringliteral">&quot;Nome do arquivo: &quot;</span>);</div>
+<div class="line"><span class="lineno">  115</span>            scanf(<span class="stringliteral">&quot;%s&quot;</span>, filename);</div>
+<div class="line"><span class="lineno">  116</span>            <a class="code hl_struct" href="struct_file.html">File</a>* file8 = <a class="code hl_function" href="func_8c.html#a2af195047ddf73839820cbf0c96a613b">search_file</a>(mem, filename);</div>
+<div class="line"><span class="lineno">  117</span>            <span class="keywordflow">if</span> (file8 != NULL) {</div>
+<div class="line"><span class="lineno">  118</span>              <a class="code hl_function" href="func_8c.html#aff5d69d660d2c873016fe233bd17ca64">show_block_addresses_graphic</a>(file8);</div>
+<div class="line"><span class="lineno">  119</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  120</span>              printf(<span class="stringliteral">&quot;Erro: Arquivo não encontrado na memória.\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  121</span>            }</div>
+<div class="line"><span class="lineno">  122</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>        <span class="keywordflow">case</span> 9:</div>
+<div class="line"><span class="lineno">  125</span>            <span class="comment">// sai da ação de receber comandos do usuário</span></div>
+<div class="line"><span class="lineno">  126</span>            leave = 1;</div>
+<div class="line"><span class="lineno">  127</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  128</span>    }    </div>
+<div class="line"><span class="lineno">  129</span>    <span class="comment">// sai do loop</span></div>
+<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">if</span> (leave)</div>
+<div class="line"><span class="lineno">  131</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  132</span>  }  </div>
+<div class="line"><span class="lineno">  133</span> </div>
+<div class="line"><span class="lineno">  134</span>  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  135</span>}</div>
+<div class="ttc" id="afunc_8c_html_a0de998e3a37b57cc9dff9cc5a8aef7a5"><div class="ttname"><a href="func_8c.html#a0de998e3a37b57cc9dff9cc5a8aef7a5">insert_file</a></div><div class="ttdeci">void insert_file(Memory *mem, File *file)</div><div class="ttdef"><b>Definition:</b> func.c:16</div></div>
+<div class="ttc" id="afunc_8c_html_a298b4947e74d6b73d92c670b3e19106c"><div class="ttname"><a href="func_8c.html#a298b4947e74d6b73d92c670b3e19106c">remove_file</a></div><div class="ttdeci">void remove_file(Memory *mem, File *file)</div><div class="ttdef"><b>Definition:</b> func.c:31</div></div>
+<div class="ttc" id="afunc_8c_html_a2af195047ddf73839820cbf0c96a613b"><div class="ttname"><a href="func_8c.html#a2af195047ddf73839820cbf0c96a613b">search_file</a></div><div class="ttdeci">File * search_file(Memory *mem, char *name)</div><div class="ttdef"><b>Definition:</b> func.c:83</div></div>
+<div class="ttc" id="afunc_8c_html_a312132702b2bd4886e6838e4f593f684"><div class="ttname"><a href="func_8c.html#a312132702b2bd4886e6838e4f593f684">init_memory</a></div><div class="ttdeci">Memory * init_memory(size_t size)</div><div class="ttdef"><b>Definition:</b> func.c:7</div></div>
+<div class="ttc" id="afunc_8c_html_a579aada0b10dd472b5b495c132451dc5"><div class="ttname"><a href="func_8c.html#a579aada0b10dd472b5b495c132451dc5">read_file</a></div><div class="ttdeci">File * read_file(char *filename)</div><div class="ttdef"><b>Definition:</b> func.c:58</div></div>
+<div class="ttc" id="afunc_8c_html_a8d18d0530cc848c5efd622a2d3db3950"><div class="ttname"><a href="func_8c.html#a8d18d0530cc848c5efd622a2d3db3950">show_results_table</a></div><div class="ttdeci">void show_results_table(Memory *mem, char *term)</div><div class="ttdef"><b>Definition:</b> func.c:135</div></div>
+<div class="ttc" id="afunc_8c_html_aad9d6fdc97d2801a1e521c32f89bc1f8"><div class="ttname"><a href="func_8c.html#aad9d6fdc97d2801a1e521c32f89bc1f8">show_file</a></div><div class="ttdeci">void show_file(File *file)</div><div class="ttdef"><b>Definition:</b> func.c:98</div></div>
+<div class="ttc" id="afunc_8c_html_aeaea99954a75823f788473dd6194c59d"><div class="ttname"><a href="func_8c.html#aeaea99954a75823f788473dd6194c59d">show_file_info</a></div><div class="ttdeci">void show_file_info(File *file)</div><div class="ttdef"><b>Definition:</b> func.c:106</div></div>
+<div class="ttc" id="afunc_8c_html_aff5d69d660d2c873016fe233bd17ca64"><div class="ttname"><a href="func_8c.html#aff5d69d660d2c873016fe233bd17ca64">show_block_addresses_graphic</a></div><div class="ttdeci">void show_block_addresses_graphic(File *file)</div><div class="ttdef"><b>Definition:</b> func.c:153</div></div>
+<div class="ttc" id="afunc_8h_html_ad51ded0bbd705f02f73fc60c0b721ced"><div class="ttname"><a href="func_8h.html#ad51ded0bbd705f02f73fc60c0b721ced">BLOCK_SIZE</a></div><div class="ttdeci">#define BLOCK_SIZE</div><div class="ttdef"><b>Definition:</b> func.h:6</div></div>
+<div class="ttc" id="astruct_file_html"><div class="ttname"><a href="struct_file.html">File</a></div><div class="ttdef"><b>Definition:</b> func.h:9</div></div>
+<div class="ttc" id="astruct_memory_html"><div class="ttname"><a href="struct_memory.html">Memory</a></div><div class="ttdef"><b>Definition:</b> func.h:17</div></div>
+<div class="ttc" id="astruct_memory_html_a9ab5cd8a4925510d332bdb78ac7e7628"><div class="ttname"><a href="struct_memory.html#a9ab5cd8a4925510d332bdb78ac7e7628">Memory::total_size</a></div><div class="ttdeci">size_t total_size</div><div class="ttdef"><b>Definition:</b> func.h:18</div></div>
+<div class="ttc" id="astruct_memory_html_aa5438b1f8825f89d25c5db97fb7b934a"><div class="ttname"><a href="struct_memory.html#aa5438b1f8825f89d25c5db97fb7b934a">Memory::used_size</a></div><div class="ttdeci">size_t used_size</div><div class="ttdef"><b>Definition:</b> func.h:19</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

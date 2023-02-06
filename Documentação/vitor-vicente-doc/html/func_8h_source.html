@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Gerenciador de Arquivos: Código-Fonte de src/func.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Gerenciador de Arquivos<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhum resultado encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">func.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="func_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef FUNCAO_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define FUNCAO_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="func_8h.html#ad51ded0bbd705f02f73fc60c0b721ced">    6</a></span><span class="preprocessor">#define BLOCK_SIZE 60 </span><span class="comment">// tamanho do bloco em bytes</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// estrutura para armazenar informações sobre arquivos</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="struct_file.html">    9</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_file.html">File</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="struct_file.html#a348deeccd6613402baa45359b275ea52">   10</a></span>  <span class="keywordtype">char</span> <a class="code hl_variable" href="struct_file.html#a348deeccd6613402baa45359b275ea52">name</a>[256];         <span class="comment">// nome do arquivo</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="struct_file.html#a5346cfe206ddc7284e4b1e44ad476a18">   11</a></span>  <span class="keywordtype">size_t</span> <a class="code hl_variable" href="struct_file.html#a5346cfe206ddc7284e4b1e44ad476a18">size</a>;            <span class="comment">// tamanho do arquivo em bytes</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_file.html#a3cce1f59cfe679caafc5682cfbb86706">   12</a></span>  <span class="keywordtype">char</span>* <a class="code hl_variable" href="struct_file.html#a3cce1f59cfe679caafc5682cfbb86706">content</a>;          <span class="comment">// conteúdo do arquivo</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_file.html#abe11ba1cdcc8764572954af13f784cd0">   13</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_file.html">File</a>* <a class="code hl_variable" href="struct_file.html#abe11ba1cdcc8764572954af13f784cd0">next</a>;      <span class="comment">// ponteiro para o próximo arquivo na lista encadeada</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="func_8h.html#a35addb8715fe28f18f6cf3b6a7f7a1b4">   14</a></span>} <a class="code hl_struct" href="struct_file.html">File</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// estrutura para armazenar informações sobre a memória</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="struct_memory.html">   17</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="struct_memory.html">Memory</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="struct_memory.html#a9ab5cd8a4925510d332bdb78ac7e7628">   18</a></span>  <span class="keywordtype">size_t</span> <a class="code hl_variable" href="struct_memory.html#a9ab5cd8a4925510d332bdb78ac7e7628">total_size</a>;      <span class="comment">// tamanho total da memória em bytes</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="struct_memory.html#aa5438b1f8825f89d25c5db97fb7b934a">   19</a></span>  <span class="keywordtype">size_t</span> <a class="code hl_variable" href="struct_memory.html#aa5438b1f8825f89d25c5db97fb7b934a">used_size</a>;       <span class="comment">// tamanho da memória utilizada em bytes</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="struct_memory.html#a6beef1a66312cb31c69a0ac914f69a47">   20</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="struct_file.html">File</a>* <a class="code hl_variable" href="struct_memory.html#a6beef1a66312cb31c69a0ac914f69a47">head</a>;      <span class="comment">// ponteiro para o primeiro arquivo na lista encadeada de arquivos</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="func_8h.html#a27481966cfd05ae7d22aafdd0b9073a6">   21</a></span>} <a class="code hl_struct" href="struct_memory.html">Memory</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><a class="code hl_struct" href="struct_memory.html">Memory</a>* <a class="code hl_function" href="func_8h.html#a312132702b2bd4886e6838e4f593f684">init_memory</a>(<span class="keywordtype">size_t</span> <a class="code hl_variable" href="struct_file.html#a5346cfe206ddc7284e4b1e44ad476a18">size</a>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">void</span> <a class="code hl_function" href="func_8h.html#a0de998e3a37b57cc9dff9cc5a8aef7a5">insert_file</a>(<a class="code hl_struct" href="struct_memory.html">Memory</a>* mem, <a class="code hl_struct" href="struct_file.html">File</a>* file);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordtype">void</span> <a class="code hl_function" href="func_8h.html#a298b4947e74d6b73d92c670b3e19106c">remove_file</a>(<a class="code hl_struct" href="struct_memory.html">Memory</a>* mem, <a class="code hl_struct" href="struct_file.html">File</a>* file);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><a class="code hl_struct" href="struct_file.html">File</a>* <a class="code hl_function" href="func_8h.html#a579aada0b10dd472b5b495c132451dc5">read_file</a>(<span class="keywordtype">char</span>* filename);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><a class="code hl_struct" href="struct_file.html">File</a>* <a class="code hl_function" href="func_8h.html#a2af195047ddf73839820cbf0c96a613b">search_file</a>(<a class="code hl_struct" href="struct_memory.html">Memory</a>* mem, <span class="keywordtype">char</span>* <a class="code hl_variable" href="struct_file.html#a348deeccd6613402baa45359b275ea52">name</a>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">void</span> <a class="code hl_function" href="func_8h.html#aad9d6fdc97d2801a1e521c32f89bc1f8">show_file</a>(<a class="code hl_struct" href="struct_file.html">File</a>* file);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">void</span> <a class="code hl_function" href="func_8h.html#aeaea99954a75823f788473dd6194c59d">show_file_info</a>(<a class="code hl_struct" href="struct_file.html">File</a>* file);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordtype">int</span> <a class="code hl_function" href="func_8h.html#aedb0964b626f9dc7cd4d7aaa062f8bbf">count_term_occurrences</a>(<a class="code hl_struct" href="struct_file.html">File</a>* file, <span class="keywordtype">char</span>* term);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">void</span> <a class="code hl_function" href="func_8h.html#a8d18d0530cc848c5efd622a2d3db3950">show_results_table</a>(<a class="code hl_struct" href="struct_memory.html">Memory</a>* mem, <span class="keywordtype">char</span>* term);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keywordtype">void</span> <a class="code hl_function" href="func_8h.html#aff5d69d660d2c873016fe233bd17ca64">show_block_addresses_graphic</a>(<a class="code hl_struct" href="struct_file.html">File</a>* file);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif </span><span class="comment">// funcoes</span></div>
+<div class="ttc" id="afunc_8h_html_a0de998e3a37b57cc9dff9cc5a8aef7a5"><div class="ttname"><a href="func_8h.html#a0de998e3a37b57cc9dff9cc5a8aef7a5">insert_file</a></div><div class="ttdeci">void insert_file(Memory *mem, File *file)</div><div class="ttdef"><b>Definition:</b> func.c:16</div></div>
+<div class="ttc" id="afunc_8h_html_a298b4947e74d6b73d92c670b3e19106c"><div class="ttname"><a href="func_8h.html#a298b4947e74d6b73d92c670b3e19106c">remove_file</a></div><div class="ttdeci">void remove_file(Memory *mem, File *file)</div><div class="ttdef"><b>Definition:</b> func.c:31</div></div>
+<div class="ttc" id="afunc_8h_html_a2af195047ddf73839820cbf0c96a613b"><div class="ttname"><a href="func_8h.html#a2af195047ddf73839820cbf0c96a613b">search_file</a></div><div class="ttdeci">File * search_file(Memory *mem, char *name)</div><div class="ttdef"><b>Definition:</b> func.c:83</div></div>
+<div class="ttc" id="afunc_8h_html_a312132702b2bd4886e6838e4f593f684"><div class="ttname"><a href="func_8h.html#a312132702b2bd4886e6838e4f593f684">init_memory</a></div><div class="ttdeci">Memory * init_memory(size_t size)</div><div class="ttdef"><b>Definition:</b> func.c:7</div></div>
+<div class="ttc" id="afunc_8h_html_a579aada0b10dd472b5b495c132451dc5"><div class="ttname"><a href="func_8h.html#a579aada0b10dd472b5b495c132451dc5">read_file</a></div><div class="ttdeci">File * read_file(char *filename)</div><div class="ttdef"><b>Definition:</b> func.c:58</div></div>
+<div class="ttc" id="afunc_8h_html_a8d18d0530cc848c5efd622a2d3db3950"><div class="ttname"><a href="func_8h.html#a8d18d0530cc848c5efd622a2d3db3950">show_results_table</a></div><div class="ttdeci">void show_results_table(Memory *mem, char *term)</div><div class="ttdef"><b>Definition:</b> func.c:135</div></div>
+<div class="ttc" id="afunc_8h_html_aad9d6fdc97d2801a1e521c32f89bc1f8"><div class="ttname"><a href="func_8h.html#aad9d6fdc97d2801a1e521c32f89bc1f8">show_file</a></div><div class="ttdeci">void show_file(File *file)</div><div class="ttdef"><b>Definition:</b> func.c:98</div></div>
+<div class="ttc" id="afunc_8h_html_aeaea99954a75823f788473dd6194c59d"><div class="ttname"><a href="func_8h.html#aeaea99954a75823f788473dd6194c59d">show_file_info</a></div><div class="ttdeci">void show_file_info(File *file)</div><div class="ttdef"><b>Definition:</b> func.c:106</div></div>
+<div class="ttc" id="afunc_8h_html_aedb0964b626f9dc7cd4d7aaa062f8bbf"><div class="ttname"><a href="func_8h.html#aedb0964b626f9dc7cd4d7aaa062f8bbf">count_term_occurrences</a></div><div class="ttdeci">int count_term_occurrences(File *file, char *term)</div><div class="ttdef"><b>Definition:</b> func.c:124</div></div>
+<div class="ttc" id="afunc_8h_html_aff5d69d660d2c873016fe233bd17ca64"><div class="ttname"><a href="func_8h.html#aff5d69d660d2c873016fe233bd17ca64">show_block_addresses_graphic</a></div><div class="ttdeci">void show_block_addresses_graphic(File *file)</div><div class="ttdef"><b>Definition:</b> func.c:153</div></div>
+<div class="ttc" id="astruct_file_html"><div class="ttname"><a href="struct_file.html">File</a></div><div class="ttdef"><b>Definition:</b> func.h:9</div></div>
+<div class="ttc" id="astruct_file_html_a348deeccd6613402baa45359b275ea52"><div class="ttname"><a href="struct_file.html#a348deeccd6613402baa45359b275ea52">File::name</a></div><div class="ttdeci">char name[256]</div><div class="ttdef"><b>Definition:</b> func.h:10</div></div>
+<div class="ttc" id="astruct_file_html_a3cce1f59cfe679caafc5682cfbb86706"><div class="ttname"><a href="struct_file.html#a3cce1f59cfe679caafc5682cfbb86706">File::content</a></div><div class="ttdeci">char * content</div><div class="ttdef"><b>Definition:</b> func.h:12</div></div>
+<div class="ttc" id="astruct_file_html_a5346cfe206ddc7284e4b1e44ad476a18"><div class="ttname"><a href="struct_file.html#a5346cfe206ddc7284e4b1e44ad476a18">File::size</a></div><div class="ttdeci">size_t size</div><div class="ttdef"><b>Definition:</b> func.h:11</div></div>
+<div class="ttc" id="astruct_file_html_abe11ba1cdcc8764572954af13f784cd0"><div class="ttname"><a href="struct_file.html#abe11ba1cdcc8764572954af13f784cd0">File::next</a></div><div class="ttdeci">struct File * next</div><div class="ttdef"><b>Definition:</b> func.h:13</div></div>
+<div class="ttc" id="astruct_memory_html"><div class="ttname"><a href="struct_memory.html">Memory</a></div><div class="ttdef"><b>Definition:</b> func.h:17</div></div>
+<div class="ttc" id="astruct_memory_html_a6beef1a66312cb31c69a0ac914f69a47"><div class="ttname"><a href="struct_memory.html#a6beef1a66312cb31c69a0ac914f69a47">Memory::head</a></div><div class="ttdeci">struct File * head</div><div class="ttdef"><b>Definition:</b> func.h:20</div></div>
+<div class="ttc" id="astruct_memory_html_a9ab5cd8a4925510d332bdb78ac7e7628"><div class="ttname"><a href="struct_memory.html#a9ab5cd8a4925510d332bdb78ac7e7628">Memory::total_size</a></div><div class="ttdeci">size_t total_size</div><div class="ttdef"><b>Definition:</b> func.h:18</div></div>
+<div class="ttc" id="astruct_memory_html_aa5438b1f8825f89d25c5db97fb7b934a"><div class="ttname"><a href="struct_memory.html#aa5438b1f8825f89d25c5db97fb7b934a">Memory::used_size</a></div><div class="ttdeci">size_t used_size</div><div class="ttdef"><b>Definition:</b> func.h:19</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>
